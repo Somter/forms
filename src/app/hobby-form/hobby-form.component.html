@@ -1,0 +1,18 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Имя</label><br>
+      <input id="name" formControlName="name">
+    </div>
+    <div>
+      <label for="email">Email</label><br>
+      <input id="email" formControlName="email">
+    </div>
+    <div>
+      <label for="terms">Принять условия</label><br>
+      <input type="checkbox" id="terms" formControlName="terms">
+    </div>
+    
+    <button type="button" (click)="addHobby()">Добавить увлечение</button>
+    <button type="submit" [disabled]="form.invalid">Отправить</button>
+  </form>
+  

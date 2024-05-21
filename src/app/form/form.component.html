@@ -1,0 +1,11 @@
+   <div>
+    <p>
+        <label>Password</label><br>
+        <input type="password" name="password" [(ngModel)]="newUser.password"/>
+    </p>
+    <p>
+        <label>Email</label><br>
+        <input type="email" name="email" [(ngModel)]="newUser.email"/>
+    </p>
+    <button (click)="addUser()">Добавить</button>
+</div>
